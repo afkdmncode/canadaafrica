@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&amp;family=Public+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#f5ece5",
+                        "secondary": "#a03f30",
+                        "surface-container-high": "#f0e7df",
+                        "on-tertiary-container": "#e6fba3",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#eae1da",
+                        "on-tertiary-fixed-variant": "#3d4c05",
+                        "on-primary-fixed-variant": "#93000a",
+                        "inverse-on-surface": "#f8efe8",
+                        "outline": "#916f6b",
+                        "primary-container": "#d52624",
+                        "surface": "#fff8f4",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#ffefed",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#34302b",
+                        "on-background": "#1f1b17",
+                        "primary": "#b0000f",
+                        "secondary-container": "#fe8672",
+                        "on-secondary-fixed-variant": "#80281b",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#4c5c16",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#ffb4ab",
+                        "secondary-fixed-dim": "#ffb4a7",
+                        "background": "#fff8f4",
+                        "surface-container-highest": "#eae1da",
+                        "on-secondary-fixed": "#400200",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#64752d",
+                        "on-secondary-container": "#741f13",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#fff8f4",
+                        "on-tertiary-fixed": "#161e00",
+                        "surface-dim": "#e1d8d2",
+                        "secondary-fixed": "#ffdad4",
+                        "surface-container-low": "#fbf2eb",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#ffb4ab",
+                        "primary-fixed": "#ffdad6",
+                        "tertiary-fixed": "#d7ec95",
+                        "outline-variant": "#e5bdb8",
+                        "on-primary-fixed": "#410002",
+                        "tertiary-fixed-dim": "#bbcf7c",
+                        "surface-tint": "#bd0f16",
+                        "on-surface": "#1f1b17",
+                        "on-surface-variant": "#5c403c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "h3": ["Inter"],
+                        "h1": ["Inter"],
+                        "h2": ["Inter"],
+                        "body-lg": ["Public Sans"],
+                        "label-caps": ["Public Sans"],
+                        "body-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "h3": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "h2": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrim-terracotta {
+            background: linear-gradient(to top, rgba(160, 63, 48, 0.8) 0%, rgba(160, 63, 48, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 dark:bg-stone-900/95 backdrop-blur-md border-b border-stone-100 dark:border-stone-800 shadow-sm shadow-stone-200/50 dark:shadow-none">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+<div class="text-xl font-black tracking-tighter text-red-600 dark:text-red-500 uppercase">
+                The Human Bridge
+            </div>
+<div class="hidden md:flex gap-8 items-center font-inter antialiased text-sm tracking-wide">
+<a class="text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1 font-bold hover:text-red-700 dark:hover:text-red-400 transition-all duration-300 active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-400 transition-all duration-300 active:scale-95 transition-transform" href="#">Our Impact</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-400 transition-all duration-300 active:scale-95 transition-transform" href="#">Donate</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-400 transition-all duration-300 active:scale-95 transition-transform" href="#">Get Involved</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold hover:bg-primary-container transition-all active:scale-95">
+                Donate Now
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A heart-warming, high-quality photograph showing a diverse group of smiling children and community leaders in a sun-drenched rural African village setting. The lighting is golden and warm, emphasizing the organic connection and human resilience. The scene is framed professionally with a slight cinematic depth of field, capturing the vibrant local textiles and the clear blue sky above. The mood is one of profound hope, structural stability, and empathetic connection, aligning with the Canadian NGO brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnbjUFq__qZz1tT6Ms6smR5IS7C_-Q6hTodj33UKZIJ0h4Cjrg8fgi4mTiyJTAhMorBmDjdHPQcYiPGJ2CKaarK7OTg06rP_LLeYq0f5D11Yrb45dr_4tr2boQKaT-5NZnUKXCw5bcqHEmqDEFJ_nO02oBqVBgEB7pxrnwKnn3nBRnhz4nbVa4hO61YR5RPsS6PhGpv_i_0X-o3XhuxVZpPl-PT5g1_n0wJ4_oyZqMpd9ynSAGzrBZYLc4MestPhB8umgzMntiEio"/>
+<div class="absolute inset-0 bg-stone-900/40"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+<div class="max-w-2xl text-on-primary">
+<span class="font-label-caps text-on-primary mb-4 block tracking-[0.2em]">SINCE 2004</span>
+<h1 class="font-h1 text-h1 mb-6">Connecting Canadian Compassion with African Communities</h1>
+<p class="font-body-lg text-body-lg mb-10 text-white/90">
+                        We build sustainable bridges of support, empowering local leaders across Africa to create lasting change through education, health, and economic resilience.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all shadow-xl shadow-primary/20">
+                            Donate Now
+                        </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">
+                            Our Story
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- By the Numbers Impact -->
+<section class="py-xl bg-surface-container">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="text-center p-md">
+<div class="text-h1 font-h1 text-primary mb-2">12M+</div>
+<p class="font-label-caps text-secondary">Litres of Clean Water</p>
+</div>
+<div class="text-center p-md">
+<div class="text-h1 font-h1 text-primary mb-2">450+</div>
+<p class="font-label-caps text-secondary">Schools Built</p>
+</div>
+<div class="text-center p-md">
+<div class="text-h1 font-h1 text-primary mb-2">85k</div>
+<p class="font-label-caps text-secondary">Farmers Empowered</p>
+</div>
+<div class="text-center p-md">
+<div class="text-h1 font-h1 text-primary mb-2">15</div>
+<p class="font-label-caps text-secondary">Nations Served</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Projects Section (Bento Grid Style) -->
+<section class="py-xl max-w-7xl mx-auto px-6">
+<div class="flex justify-between items-end mb-lg">
+<div class="max-w-xl">
+<h2 class="font-h2 text-h2 text-on-background mb-4">Transforming Lives, Together</h2>
+<p class="font-body-md text-on-surface-variant">Explore our latest initiatives where community expertise meets Canadian generosity to solve critical challenges.</p>
+</div>
+<a class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="#">
+                    View All Projects <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-auto md:h-[600px]">
+<!-- Main Featured Project -->
+<div class="md:col-span-7 relative group overflow-hidden rounded-xl bg-white shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide-angle landscape shot of a new solar-powered irrigation system in a lush community garden in Kenya. Local farmers are seen working together with smiles, surrounded by vibrant green crops under a bright, high-key sun. The architectural elements of the water tower are clean and modern, representing the 'Human Bridge' between technology and tradition. The lighting is crisp and airy, following a professional NGO photography style that emphasizes growth and progress." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh_aZ_eOIyJBZ9uWj1H-ZI6KpnfEvFUx1G-Y4yIj6euzpp5GggU6ZKyklWt0C7DpxrzPhiSWB09kz19PAE7jIfeomgKcHhqqa4bOWGvr3CJdyhrseeL1VOL3bR_grToczmQ7LLaPSTEGyHxhz2iWhuYjnmiMmEZzV_Bao6irUFWQNbvux1N7763cgmcrGAZOOpH9PDOj-rBnDWeEJ8l3_ycKHeRL9CX0ynP8v1lzqTaxL3gIKBMJgsCoSnyCjvKf3S1Ki1ehTfas0"/>
+<div class="absolute inset-0 scrim-terracotta flex flex-col justify-end p-lg text-white">
+<span class="font-label-caps text-on-tertiary-container mb-2">WATER &amp; SUSTAINABILITY</span>
+<h3 class="font-h3 text-h3 mb-4">The Turkana Solar Initiative</h3>
+<p class="font-body-md opacity-90 max-w-lg mb-6">Bringing sustainable energy and clean water to 40,000 residents in northern Kenya through community-led infrastructure.</p>
+<div class="w-full bg-white/20 h-1.5 rounded-full mb-2">
+<div class="bg-tertiary-fixed w-[78%] h-full rounded-full"></div>
+</div>
+<div class="flex justify-between text-sm font-bold">
+<span>$156,000 Raised</span>
+<span>78% Funded</span>
+</div>
+</div>
+</div>
+<!-- Secondary Projects Stack -->
+<div class="md:col-span-5 grid grid-rows-2 gap-gutter">
+<div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of young students in a bright, modern classroom in Ghana, focused on their brand new tablet devices provided by a digital literacy program. The room is filled with soft natural light from large windows, reflecting a hopeful and studious atmosphere. The children are wearing neat, colorful uniforms, and the background shows high-quality educational posters. The visual style is crisp, professional, and captures the dignity of modern African education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_blZTkooioKHSitjuOjMBu-U45HEC1LeCBkCDNui2c7Nb-ryRZuQYjUVrq910_DoHzbQs7pYDAL5DDf2B1VMK08v64BeLYUbFa_aKidef6r81d4jB08R8C1wZGEihKQ_gSUSWfWKs_uGHGPALdb0C8Tym2nKue42VbQ5MsGgiZAo4FQYYn6PvGZ3FnHpNeQ58asLWnd7yL8ddyb5RHuQwIFytoz8jpjyIvEPa0HebjqM1LaD6lcaK-SloNC8qjnmtxRI2gOX2Hzk"/>
+</div>
+<div class="p-md flex-grow">
+<span class="font-label-caps text-secondary mb-2 block">EDUCATION</span>
+<h4 class="font-h3 text-[22px] mb-2">Digital Classrooms Ghana</h4>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Equipping 12 rural schools with solar-powered computer labs and certified training.</p>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A portrait of a female entrepreneur in Malawi proudly standing in her thriving poultry farm. She is surrounded by healthy livestock and professional equipment, looking directly at the camera with a confident, warm smile. The late afternoon sun creates a warm, rich palette of ochre and gold. The photography emphasizes economic empowerment and self-sufficiency, using a clean and respectful editorial composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3F1R0SicSkbfkmxz-DBA8ZMLcHML3jijzB79EzPtJtOm_VSL48Trlqji5RhHeAS2F36KpleLe99u9cb17UZfKowlkctUT2_a_qxe9XKnmD5WVEVGvDms1zLkUmIA5VCOCxEr8-VT1Zw-qc-Ox_rMpjtNaJaY11xjHUe09KCs-eVHXzpPsB-Q6XYgSNm8y3DEfL9gxh7XjAKGRFdS7fF8UwoU4-KtDHNEpLrsIYVrxxuTe6PKZuROWtD_1CAiBQ1e7BvkOPnOPMDY"/>
+</div>
+<div class="p-md flex-grow">
+<span class="font-label-caps text-secondary mb-2 block">MICRO-FINANCE</span>
+<h4 class="font-h3 text-[22px] mb-2">Malawi Women's Coop</h4>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Providing zero-interest micro-loans to 500 women entrepreneurs to launch sustainable poultry farms.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Statement / Call to Action -->
+<section class="bg-surface-container-high py-xl">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-lg items-center">
+<div class="relative rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full aspect-[4/3] object-cover" data-alt="A high-angle photo of two people shaking hands over a wooden table—one person represents the Canadian donor and the other a local African community leader. The focus is on the firm, respectful handshake, symbolizing the 'Human Bridge' and mutual partnership. On the table are maps and project plans. The lighting is soft and even, highlighting the textures of the table and the professional yet warm setting. The aesthetic is grounded, authoritative, and deeply human." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS_z0n7zYMHJ4G65Z9Mo4AtQMPvRibZ6qqCf-KX88vmI3DZNzJZWw2YF4RWPzXyzeC7YEFaDIcbbIoaeSGz2UiVo7JY0zNbAvCRmF0iogKSmaC6LB9VBAhxlonbckRm_dAoBzq8GOR-nzwJ3UHpkdOLQUTWWsaKhQAFvjwEdlxj4WN5oZ0Sd3v5gA76ty8UtQNuZF3kptO0wyqlZU67TejEvPlC0BfjqbZJi09dCGke_vvuF_eSg5BzpQfXkU2dUX5DtqSlKzgyQg"/>
+</div>
+<div class="space-y-6 md:pl-lg">
+<h2 class="font-h2 text-h2 text-on-background">Your Bridge to Lasting Impact</h2>
+<p class="font-body-lg text-on-surface-variant">
+                        At The Human Bridge, we don't just send aid; we build relationships. Every project is designed by local leaders who understand the unique needs of their community. Your generosity provides the structural support they need to flourish.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-body-md font-semibold">
+<span class="material-symbols-outlined text-primary">verified</span> 100% Transparency in Fund Allocation
+                        </li>
+<li class="flex items-center gap-3 font-body-md font-semibold">
+<span class="material-symbols-outlined text-primary">verified</span> Community-Led Development Models
+                        </li>
+<li class="flex items-center gap-3 font-body-md font-semibold">
+<span class="material-symbols-outlined text-primary">verified</span> Sustainable, Long-Term Infrastructure
+                        </li>
+</ul>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all active:scale-95 shadow-lg shadow-primary/10">
+                        Become a Monthly Partner
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-stone-50 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-4">The Human Bridge</div>
+<p class="font-inter text-xs uppercase tracking-widest text-stone-500 dark:text-stone-500">© 2024 The Human Bridge. A Registered Canadian Charity. Empowering communities across Africa.</p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4 font-inter text-xs uppercase tracking-widest">
+<a class="text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors opacity-100 hover:opacity-80" href="#">Financial Transparency</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors opacity-100 hover:opacity-80" href="#">Annual Reports</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-colors opacity-100 hover:opacity-80" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>
